@@ -12,7 +12,7 @@ app.use(cors())
 app.use(express.json())
 
 // MongoConnection
-mongoose.connect(process.env.MONGOURL, { dbName: 'otpverify', }).then(() => { console.log('Connected to DB') })
+mongoose.connect(process.env.MONGOURL, { dbName: 'otpverify', }).then(() => { console.log('Connected to DataBase') })
 
 // Routes
 app.use('/auth', userRoutes)
